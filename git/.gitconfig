@@ -1,0 +1,10 @@
+[user]
+	name = L7Cy
+	email = l7cy.at@gmail.com
+[color]
+	ui = true
+[core]
+	editor = nvim
+	quotepath = false
+[credential]
+	helper = osxkeychain
