@@ -1,0 +1,7 @@
+require('options')
+require('colorscheme')
+require('plugins')
+require('statusbar')
+require('lsp')
+require('completion')
+require('keymaps')
