@@ -19,4 +19,5 @@ require('jetpack.packer').startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
   use "lukas-reineke/indent-blankline.nvim"
+  use 'lewis6991/gitsigns.nvim'
 end)
