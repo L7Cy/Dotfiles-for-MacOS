@@ -20,4 +20,15 @@ require('jetpack.packer').startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use "lukas-reineke/indent-blankline.nvim"
   use 'lewis6991/gitsigns.nvim'
+  use 'MunifTanjim/nui.nvim'
+  use 'rcarriga/nvim-notify'
+  use {
+			'folke/noice.nvim',
+			event = 'VimEnter',
+      config = 'require("noiceConf")',
+			requires = {
+				'MunifTanjim/nui.nvim',
+				'rcarriga/nvim-notify',
+			},
+	}
 end)
