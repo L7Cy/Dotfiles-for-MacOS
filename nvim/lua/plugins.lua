@@ -31,4 +31,8 @@ require('jetpack.packer').startup(function(use)
 				'rcarriga/nvim-notify',
 			},
 	}
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 end)
