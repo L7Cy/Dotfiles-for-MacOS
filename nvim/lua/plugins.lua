@@ -7,17 +7,29 @@ require('jetpack.packer').startup(function(use)
   use 'jiangmiao/auto-pairs'
   use 'nvim-lualine/lualine.nvim'
   use 'kyazdani42/nvim-web-devicons'
-  use 'neovim/nvim-lspconfig'
+  use {
+    'neovim/nvim-lspconfig',
+    event = 'VimEnter',
+    config = 'require("lsp")'
+  }
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
-  use 'hrsh7th/nvim-cmp'
+  use {
+    'hrsh7th/nvim-cmp',
+    module = 'cmp',
+    config = 'require("completion")',
+  }
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-cmdline'
   use 'nvim-lua/plenary.nvim'
-  use 'nvim-telescope/telescope.nvim'
+  use {
+    'nvim-telescope/telescope.nvim',
+    event = 'VimEnter',
+    config = 'require("fazzyFinder")'
+  }
   use 'nvim-telescope/telescope-file-browser.nvim'
   use "lukas-reineke/indent-blankline.nvim"
   use {
