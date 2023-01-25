@@ -6,6 +6,8 @@ vim.g.maplocalleader = " "
 keymap("", "<Space>", "<Nop>", opts)
 keymap("n","j","7j",opts)
 keymap("n","k","7k",opts)
+keymap("v","j","7j",opts)
+keymap("v","k","7k",opts)
 keymap("i", ",", ",<Space>", opts)
 keymap("n","w","<Plug>(easymotion-bd-w)",opts)
 keymap("n","s","<Plug>(easymotion-bd-f2)",opts)
