@@ -19,7 +19,11 @@ require('jetpack.packer').startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
   use "lukas-reineke/indent-blankline.nvim"
-  use 'lewis6991/gitsigns.nvim'
+  use {
+    'lewis6991/gitsigns.nvim',
+    event = 'VimEnter',
+    config = 'require("git")'
+  }
   use 'MunifTanjim/nui.nvim'
   use 'rcarriga/nvim-notify'
   use {
@@ -33,6 +37,8 @@ require('jetpack.packer').startup(function(use)
 	}
   use {
     'nvim-treesitter/nvim-treesitter',
+    event = 'VimEnter',
+    config = 'require("treesitter")',
     run = ':TSUpdate'
   }
   use 'nvim-telescope/telescope-file-browser.nvim'
