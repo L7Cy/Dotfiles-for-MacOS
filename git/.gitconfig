@@ -8,3 +8,5 @@
 	quotepath = false
 [credential]
 	helper = osxkeychain
+[pull]
+	rebase = false
