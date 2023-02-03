@@ -2,7 +2,7 @@ yabai -m config                                 \
     mouse_follows_focus          on            \
     focus_follows_mouse          autoraise            \
     window_origin_display        default        \
-    window_placement             second_child   \
+    window_placement             first_child   \
     window_zoom_persist          on             \
     window_topmost               off            \
     window_shadow                on             \
