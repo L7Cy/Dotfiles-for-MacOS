@@ -1,6 +1,8 @@
 # full screen
 ctrl - f : yabai -m window --toggle zoom-fullscreen
 ctrl + shift - f : yabai -m window --toggle native-fullscreen
+fn - f : yabai -m window --toggle zoom-fullscreen
+fn + shift - f : yabai -m window --toggle native-fullscreen
 
 # focus
 fn - i : yabai -m window --focus north \
