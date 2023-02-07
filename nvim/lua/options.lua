@@ -50,3 +50,6 @@ end
 
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd([[set iskeyword+=-]])
+
+vim.wo.list = true
+vim.wo.listchars = 'tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%'
