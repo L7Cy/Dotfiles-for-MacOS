@@ -11,6 +11,8 @@ exmap FocusRight obcommand editor:focus-right
 exmap FocusTop obcommand editor:focus-top
 exmap FocusBottom obcommand editor:focus-bottom
 exmap maximize obcommand pane-relief:maximize
+exmap blankBelow obcommand obsidian-editor-shortcuts:insertLineBelow
+exmap blankAbove obcommand obsidian-editor-shortcuts:insertLineAbove
 nmap s :lightspeedJump
 nmap w :jumpAnyWhere
 nmap f :jumpToLink
@@ -27,4 +29,8 @@ nmap k 7gk
 nmap <Down> gj
 nmap <Up> gk
 nmap <esc> :focusNote
+nmap &a& :blankAbove
+nmap &b& :blankBelow
+nmap o &b&i
+nmap O &a&i
 set clipboard=unnamed
