@@ -13,9 +13,12 @@ exmap FocusBottom obcommand editor:focus-bottom
 exmap maximize obcommand pane-relief:maximize
 exmap blankBelow obcommand obsidian-editor-shortcuts:insertLineBelow
 exmap blankAbove obcommand obsidian-editor-shortcuts:insertLineAbove
+exmap save obcommand editor:save-file
 nmap s :lightspeedJump
 nmap w :jumpAnyWhere
-nmap f :jumpToLink
+nmap &c& :save
+nmap &d& :jumpToLink
+nmap f &c&&d&
 unmap <Space>
 nmap <Space>d :splitDown
 nmap <Space>r :splitRight
