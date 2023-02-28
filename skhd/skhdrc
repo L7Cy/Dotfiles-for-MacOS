@@ -6,19 +6,27 @@ fn + shift - f : yabai -m window --toggle native-fullscreen
 
 # focus
 fn - i : yabai -m window --focus north \
+    || yabai -m display --focus north \
     || yabai -m window --focus first
 fn - l : yabai -m window --focus east \
+    || yabai -m display --focus east \
     || yabai -m window --focus last
 fn - k : yabai -m window --focus south \
+    || yabai -m display --focus south \
     || yabai -m window --focus last
 fn - j : yabai -m window --focus west \
+    || yabai -m display --focus west \
     || yabai -m window --focus first
 
 # warp
-fn + ctrl - i : yabai -m window --warp north
-fn + ctrl - l : yabai -m window --warp east
-fn + ctrl - k : yabai -m window --warp south
-fn + ctrl - j : yabai -m window --warp west
+fn + ctrl - i : yabai -m window --warp north \
+            || (yabai -m window --display north && yabai -m display --focus north)
+fn + ctrl - l : yabai -m window --warp east \
+            || (yabai -m window --display east && yabai -m display --focus east)
+fn + ctrl - k : yabai -m window --warp south \
+            || (yabai -m window --display south && yabai -m display --focus south)
+fn + ctrl - j : yabai -m window --warp west \
+            || (yabai -m window --display west && yabai -m display --focus west)
 
 # resize
 fn + cmd - j: yabai -m window --resize left:-50:0 || yabai -m window --resize right:-50:0
